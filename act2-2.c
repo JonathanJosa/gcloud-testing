@@ -80,5 +80,5 @@ int main(){
     img_create(omp_get_thread_num()+1);
 
   printf("\nImages: %i", img_tests);
-  t2 = omp_get_wtime(); printf("\nTime: %lfs", t2-t1);
+  t2 = omp_get_wtime(); printf("\nTime: %lfs\n", t2-t1);
 }

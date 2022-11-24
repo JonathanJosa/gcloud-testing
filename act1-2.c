@@ -24,11 +24,11 @@ void iteracion(int N){
 
 int main(){
   double t1, t2; t1 = omp_get_wtime();
-  int tests[] = {88, 78, 102, 129773, 129773, 129773, 129773, 129773, 129773};
+  int tests[] = {523703, 523703, 523703, 523703, 523703};
 
-  omp_set_num_threads(sizeof(tests) / sizeof(int));
+  omp_set_num_threads(5);
   #pragma omp parallel
     iteracion(tests[omp_get_thread_num()]);
 
-  t2 = omp_get_wtime(); printf("\nTime: %lfs", t2-t1);
+  t2 = omp_get_wtime(); printf("\nTime: %lfs\n", t2-t1);
 }

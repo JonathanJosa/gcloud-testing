@@ -4,7 +4,7 @@
 static long num_pasos=1000000000;
 double paso;
 //#define NUM_THREADS 18275
-#define NUM_THREADS 50
+#define NUM_THREADS 15
 
 void main(){
  int i, nthreads;
@@ -35,3 +35,5 @@ void main(){
    printf("time (%lf)\n", tiempo);
    printf("threads (%i)\n", NUM_THREADS);
 }
+
+
