@@ -3,7 +3,7 @@
 
 void iteracion(int N){
 
-  char dst[19]; snprintf(dst, 19, "euler/Euler_%i.txt", omp_get_thread_num()+1);
+  char dst[25]; snprintf(dst, 25, "euler_local/Euler_%i.txt", omp_get_thread_num()+1);
 
   FILE *fptr; fptr=fopen(dst,"w");
 

@@ -4,7 +4,7 @@
 
 void img_create(){
   char org[17]; snprintf(org, 17, "img/input_%i.bmp", omp_get_thread_num()+1);
-  char dst[16]; snprintf(dst, 16, "img/flip_%i.bmp", omp_get_thread_num()+1);
+  char dst[18]; snprintf(dst, 18, "local/flip_%i.bmp", omp_get_thread_num()+1);
 
   FILE *fptr_r; fptr_r=fopen(org,"rb");
   FILE *fptr_w; fptr_w=fopen(dst,"wb");

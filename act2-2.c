@@ -6,7 +6,7 @@ void img_create(int n){
 
   //Img named as thread number created
   char org[17]; snprintf(org, 17, "img/input_%i.bmp", n);
-  char dst[16]; snprintf(dst, 16, "img/blur_%i.bmp", n);
+  char dst[18]; snprintf(dst, 18, "local/blur_%i.bmp", n);
 
   //Open files
   FILE *fptr_r; fptr_r=fopen(org,"rb");
